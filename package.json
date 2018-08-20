@@ -1,0 +1,24 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "Pleins d'exercices",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "NerOcrO",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.8.6"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "mocha": "^5.2.0"
+  }
+}
