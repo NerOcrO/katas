@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Pleins d'exercices",
   "scripts": {
+    "anagram_test": "mocha --require babel-core/register test/anagram.js",
+    "anagram": "node -r babel-register src/anagram.js",
     "diamond_test": "mocha --require babel-core/register test/diamond.js",
     "diamond": "node -r babel-register src/diamond.js"
   },
