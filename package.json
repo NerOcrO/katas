@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Pleins d'exercices",
   "scripts": {
+    "diamond_test": "mocha --require babel-core/register test/diamond.js",
+    "diamond": "node -r babel-register src/diamond.js"
   },
   "keywords": [],
   "author": "NerOcrO",
