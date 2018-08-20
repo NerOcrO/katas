@@ -6,7 +6,9 @@
     "anagram_test": "mocha --require babel-core/register test/anagram.js",
     "anagram": "node -r babel-register src/anagram.js",
     "diamond_test": "mocha --require babel-core/register test/diamond.js",
-    "diamond": "node -r babel-register src/diamond.js"
+    "diamond": "node -r babel-register src/diamond.js",
+    "palindrome_test": "mocha --require babel-core/register test/palindrome.js",
+    "palindrome": "node -r babel-register src/palindrome.js"
   },
   "keywords": [],
   "author": "NerOcrO",
