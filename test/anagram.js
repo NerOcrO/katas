@@ -5,7 +5,7 @@ import { sortBycharCode, isAnagram } from '../src/anagram'
 
 describe('Sort by char code :', () => {
   it('Transformation des mots en code de caractères', () => {
-    assert.strictEqual(sortBycharCode('çrâne'), '​​​​​9799101110114​​​​​')
+    assert.strictEqual(sortBycharCode('çrâne'), '9799101110114')
   })
 })
 

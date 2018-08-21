@@ -7,6 +7,8 @@
     "anagram": "node -r babel-register src/anagram.js",
     "diamond_test": "mocha --require babel-core/register test/diamond.js",
     "diamond": "node -r babel-register src/diamond.js",
+    "encode_message_test": "mocha --require babel-core/register test/encode-message.js",
+    "encode_message": "node -r babel-register src/encode-message.js",
     "palindrome_test": "mocha --require babel-core/register test/palindrome.js",
     "palindrome": "node -r babel-register src/palindrome.js"
   },
