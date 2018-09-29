@@ -5,6 +5,8 @@
   "scripts": {
     "anagram_test": "mocha --require babel-core/register test/anagram.js",
     "anagram": "node -r babel-register src/anagram.js",
+    "caesar_cipher_test": "mocha --require babel-core/register test/caesar-cipher.js",
+    "caesar_cipher": "node -r babel-register src/caesar-cipher.js",
     "diamond_test": "mocha --require babel-core/register test/diamond.js",
     "diamond": "node -r babel-register src/diamond.js",
     "encode_message_test": "mocha --require babel-core/register test/encode-message.js",
