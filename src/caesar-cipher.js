@@ -11,11 +11,11 @@ const caesarCipher = (text, offset = 1, right = true) => {
 
     offset = offset < alphabetLength ? offset : offset - alphabetLength
 
-    if (right) {
-      charCodeAt += offset
+    if (right === false) {
+      charCodeAt -= offset - alphabetLength
     }
     else {
-      charCodeAt -= offset - alphabetLength
+      charCodeAt += offset
     }
 
     const index = charCodeAt <= (letter <= 'Z' ? Z : z) ? charCodeAt : charCodeAt - alphabetLength
@@ -28,14 +28,15 @@ const caesarCipher = (text, offset = 1, right = true) => {
 
 export default caesarCipher
 
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 0))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 26))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 27))
-console.log(caesarCipher("L'encyclopédie et 2 moi !", 1))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 0))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 26))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 27))
+// console.log(caesarCipher("L'encyclopédie et 2 moi !", 1))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1, null))
 
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 0, false))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1, false))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 26, false))
-console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 27, false))
-console.log(caesarCipher("L'encyclopédie et 2 moi !", 1, false))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 0, false))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1, false))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 26, false))
+// console.log(caesarCipher('abcdefghijklmnopqrstuvwxyz', 27, false))
+// console.log(caesarCipher("L'encyclopédie et 2 moi !", 1, false))

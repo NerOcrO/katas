@@ -6,6 +6,6 @@ const fizzBuzz = number => number % 15 ? number % 3 ? number % 5 ? number : 'buz
 
 export default fizzBuzz
 
-for (let index = 1; index < 100; index++) {
-  console.log(fizzBuzz(index))
-}
+// for (let index = 1; index < 100; index++) {
+//   console.log(fizzBuzz(index))
+// }

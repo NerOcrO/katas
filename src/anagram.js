@@ -12,8 +12,8 @@ export const sortBycharCode = wording => wording
   .join('')
 export const isAnagram = (base, anagram) => sortBycharCode(base) === sortBycharCode(anagram)
 
-console.log(isAnagram('abc', 'abdc'))
-console.log(isAnagram('rr', 'rt'))
-console.log(isAnagram('Marion', 'Romain'))
-console.log(isAnagram('çrâne', 'écran'))
-console.log(isAnagram('Le commandant Cousteau', "Tout commença dans l'eau"))
+// console.log(isAnagram('abc', 'abdc'))
+// console.log(isAnagram('rr', 'rt'))
+// console.log(isAnagram('Marion', 'Romain'))
+// console.log(isAnagram('çrâne', 'écran'))
+// console.log(isAnagram('Le commandant Cousteau', "Tout commença dans l'eau"))

@@ -8,3 +8,5 @@
 * Code sans commentaire
 * Code réutilisable
 * Code avec tests
+* Code coverage
+* Mutation testing

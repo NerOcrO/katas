@@ -24,6 +24,10 @@ describe('Caesar cipher:', () => {
     assert.strictEqual(caesarCipher("L'encyclopédie et 2 moi !", 1), "M'fodzdmpqéejf fu 2 npj !")
   })
 
+  it('Décalage de 1 vers la droite mais avec null', () => {
+    assert.strictEqual(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1, null), 'bcdefghijklmnopqrstuvwxyza')
+  })
+
   it('Décalage de 0 vers la gauche', () => {
     assert.strictEqual(caesarCipher('abcdefghijklmnopqrstuvwxyz', 0, false), 'abcdefghijklmnopqrstuvwxyz')
   })

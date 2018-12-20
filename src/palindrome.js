@@ -10,7 +10,7 @@ const isPalindrome = wording => !wording
 
 export default isPalindrome
 
-console.log(isPalindrome('abcd'))
-console.log(isPalindrome('Radar'))
-console.log(isPalindrome('Ève'))
-console.log(isPalindrome('La mariée ira mal'))
+// console.log(isPalindrome('abcd'))
+// console.log(isPalindrome('Radar'))
+// console.log(isPalindrome('Ève'))
+// console.log(isPalindrome('La mariée ira mal'))
