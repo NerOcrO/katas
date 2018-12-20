@@ -2,20 +2,6 @@
   "name": "katas",
   "version": "1.0.0",
   "description": "Pleins d'exercices",
-  "scripts": {
-    "anagram_test": "mocha --require babel-core/register test/anagram.js",
-    "anagram": "node -r babel-register src/anagram.js",
-    "caesar_cipher_test": "mocha --require babel-core/register test/caesar-cipher.js",
-    "caesar_cipher": "node -r babel-register src/caesar-cipher.js",
-    "diamond_test": "mocha --require babel-core/register test/diamond.js",
-    "diamond": "node -r babel-register src/diamond.js",
-    "encode_message_test": "mocha --require babel-core/register test/encode-message.js",
-    "encode_message": "node -r babel-register src/encode-message.js",
-    "fizzbuzz_test": "mocha --require babel-core/register test/fizzbuzz.js",
-    "fizzbuzz": "node -r babel-register src/fizzbuzz.js",
-    "palindrome_test": "mocha --require babel-core/register test/palindrome.js",
-    "palindrome": "node -r babel-register src/palindrome.js"
-  },
   "keywords": [],
   "author": "NerOcrO",
   "license": "MIT",
@@ -31,6 +17,35 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "stryker": "^0.33.2",
+    "stryker-api": "^0.22.1",
+    "stryker-babel-transpiler": "^0.7.11",
+    "stryker-baseline-reporter": "^1.0.3",
+    "stryker-html-reporter": "^0.16.10",
+    "stryker-javascript-mutator": "^0.12.2",
+    "stryker-mocha-framework": "^0.13.3",
+    "stryker-mocha-runner": "^0.15.3"
+  },
+  "scripts": {
+    "anagram_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/anagram.js",
+    "anagram": "node -r babel-register src/anagram.js",
+    "caesar_cipher_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/caesar-cipher.js",
+    "caesar_cipher": "node -r babel-register src/caesar-cipher.js",
+    "diamond_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/diamond.js",
+    "diamond": "node -r babel-register src/diamond.js",
+    "encode_message_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/encode-message.js",
+    "encode_message": "node -r babel-register src/encode-message.js",
+    "fizzbuzz_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/fizzbuzz.js",
+    "fizzbuzz": "node -r babel-register src/fizzbuzz.js",
+    "palindrome_test": "./node_modules/.bin/nyc mocha --require babel-core/register test/palindrome.js",
+    "palindrome": "node -r babel-register src/palindrome.js"
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "text"
+    ]
   }
 }

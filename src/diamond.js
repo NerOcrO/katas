@@ -3,7 +3,7 @@
 // http://codingdojo.org/kata/Diamond/
 
 const createDiamond = (userLetter) => {
-  if (!userLetter.match(/^[a-zA-Z]$/)) {
+  if (!/^[a-zA-Z]$/.test(userLetter)) {
     return '-'
   }
 
@@ -27,8 +27,8 @@ const createDiamond = (userLetter) => {
 
 export default createDiamond
 
-console.log(createDiamond('%'))
-console.log(createDiamond('%a'))
-console.log(createDiamond('a'))
-console.log(createDiamond('c'))
-console.log(createDiamond('z'))
+// console.log(createDiamond('%'))
+// console.log(createDiamond('%a'))
+// console.log(createDiamond('a'))
+// console.log(createDiamond('c'))
+// console.log(createDiamond('z'))
