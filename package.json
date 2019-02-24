@@ -9,6 +9,10 @@
     "node": ">=6.0.0",
     "npm": ">=3.8.6"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NerOcrO/katas"
+  },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0"
@@ -16,9 +20,9 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
+    "nyc": "^13.3.0",
     "stryker": "^0.33.2",
     "stryker-api": "^0.22.1",
     "stryker-babel-transpiler": "^0.7.11",
