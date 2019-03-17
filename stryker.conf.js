@@ -1,13 +1,14 @@
-module.exports = function(config) {
+module.exports = (config) => {
   config.set({
-    mutator: "javascript",
-    packageManager: "npm",
-    reporters: ["html", "baseline", "clear-text", "progress", "dashboard"],
-    testRunner: "mocha",
-    transpilers: ["babel"],
-    testFramework: "mocha",
-    coverageAnalysis: "off",
-    mutate: ["src/**/*.js"],
-    babelrcFile: ".babelrc"
-  });
-};
+    mutator: 'javascript',
+    packageManager: 'npm',
+    reporters: ['html', 'clear-text', 'progress', 'dashboard'],
+    testRunner: 'jest',
+    transpilers: ['babel'],
+    coverageAnalysis: 'off',
+    babel: {
+      optionsFile: '.babelrc',
+    },
+    mutate: ['src/*.js'],
+  })
+}

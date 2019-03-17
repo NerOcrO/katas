@@ -10,3 +10,10 @@
 * Code avec tests
 * Code coverage
 * Mutation testing
+
+## Tests
+
+* `npm test`
+* `npm test -- --watch`
+* `npm test -- test/anagram.test.js`
+* `npm test -- --watch test/anagram.test.js`
