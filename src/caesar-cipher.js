@@ -2,28 +2,26 @@
 
 // https://en.wikipedia.org/wiki/Caesar_cipher
 
-const caesarCipher = text => offset => (direction) => {
-  const substitution = (letter) => {
-    const alphabetLength = 26
-    const Z = 90
-    const z = 122
-    let charCodeAt = letter.charCodeAt()
+const substitution = offset => direction => (letter) => {
+  const alphabetLength = 26
+  const Z = 90
+  const z = 122
+  const offset2 = offset < alphabetLength ? offset : offset - alphabetLength
+  let charCodeAt = letter.charCodeAt()
 
-    offset = offset < alphabetLength ? offset : offset - alphabetLength
-
-    if (direction === 'left') {
-      charCodeAt -= offset - alphabetLength
-    }
-    else {
-      charCodeAt += offset
-    }
-
-    const index = charCodeAt <= (letter <= 'Z' ? Z : z) ? charCodeAt : charCodeAt - alphabetLength
-
-    return String.fromCharCode(index)
+  if (direction === 'left') {
+    charCodeAt -= offset2 - alphabetLength
+  }
+  else {
+    charCodeAt += offset2
   }
 
-  return text.replace(/[a-zA-Z]/g, substitution)
+  const index = charCodeAt <= (letter <= 'Z' ? Z : z) ? charCodeAt : charCodeAt - alphabetLength
+
+  return String.fromCharCode(index)
 }
+
+const caesarCipher = text => offset => direction =>
+  text.replace(/[a-zA-Z]/g, substitution(offset)(direction))
 
 export default caesarCipher

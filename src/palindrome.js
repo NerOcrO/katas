@@ -9,8 +9,3 @@ const isPalindrome = wording => !wording
   .localeCompare(wording, 'fr', { sensitivity: 'base', ignorePunctuation: true })
 
 export default isPalindrome
-
-// console.log(isPalindrome('abcd'))
-// console.log(isPalindrome('Radar'))
-// console.log(isPalindrome('Ève'))
-// console.log(isPalindrome('La mariée ira mal'))
