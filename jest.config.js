@@ -1,4 +1,12 @@
 module.exports = {
   collectCoverage: true,
-  coverageReporters: ['html'],
+  collectCoverageFrom: [
+    '**/src/**',
+  ],
+  coverageReporters: [
+    'html',
+    'lcov',
+    'text',
+  ],
+  verbose: true,
 }

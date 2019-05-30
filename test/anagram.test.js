@@ -10,22 +10,22 @@ describe('Sort by char code :', () => {
 
 describe('Anagram :', () => {
   test('Nombre de lettres différentes', () => {
-    expect(isAnagram('abc', 'abdc')).toBeFalsy()
+    expect(isAnagram('abc', 'abdc')).toBe(false)
   })
 
   test('Lettres différentes', () => {
-    expect(isAnagram('rr', 'rt')).toBeFalsy()
+    expect(isAnagram('rr', 'rt')).toBe(false)
   })
 
   test('Anagramme simple', () => {
-    expect(isAnagram('Marion', 'Romain')).toBeTruthy()
+    expect(isAnagram('Marion', 'Romain')).toBe(true)
   })
 
   test('Anagramme avec caractère spéciaux', () => {
-    expect(isAnagram('çrâne', 'écran')).toBeTruthy()
+    expect(isAnagram('çrâne', 'écran')).toBe(true)
   })
 
   test('Une phrase', () => {
-    expect(isAnagram('Le commandant Cousteau', "Tout commença dans l'eau")).toBeTruthy()
+    expect(isAnagram('Le commandant Cousteau', "Tout commença dans l'eau")).toBe(true)
   })
 })
