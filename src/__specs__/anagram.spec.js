@@ -1,6 +1,6 @@
 'use strict'
 
-import { sortBycharCode, isAnagram } from '../src/anagram'
+import { sortBycharCode, isAnagram } from '../anagram'
 
 describe('Sort by char code :', () => {
   test('Transformation des mots en code de caractères', () => {

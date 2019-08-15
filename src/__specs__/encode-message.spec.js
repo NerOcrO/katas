@@ -1,6 +1,6 @@
 'use strict'
 
-import { charToBinary, binaryToChuck, encodeMessage } from '../src/encode-message'
+import { charToBinary, binaryToChuck, encodeMessage } from '../encode-message'
 
 describe('Transformation de caractères en binaire sur 7 bits :', () => {
   test('7 Bits', () => {

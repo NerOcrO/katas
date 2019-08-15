@@ -1,6 +1,6 @@
 'use strict'
 
-import fizzBuzz from '../src/fizzbuzz'
+import fizzBuzz from '../fizzbuzz'
 
 describe('FizzBuzz :', () => {
   test('Nombre divisible par 3', () => {

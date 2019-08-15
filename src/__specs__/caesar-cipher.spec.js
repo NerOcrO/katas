@@ -1,6 +1,6 @@
 'use strict'
 
-import caesarCipher from '../src/caesar-cipher'
+import caesarCipher from '../caesar-cipher'
 
 describe('Caesar cipher:', () => {
   let decalage

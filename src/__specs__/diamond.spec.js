@@ -1,6 +1,6 @@
 'use strict'
 
-import createDiamond from '../src/diamond'
+import createDiamond from '../diamond'
 
 describe('Diamond :', () => {
   test("Passer autre chose qu'une lettre", () => {

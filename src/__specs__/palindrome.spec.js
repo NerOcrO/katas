@@ -1,6 +1,6 @@
 'use strict'
 
-import isPalindrome from '../src/palindrome'
+import isPalindrome from '../palindrome'
 
 describe('Palindrome :', () => {
   test('Des lettres au hasard', () => {
