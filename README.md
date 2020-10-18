@@ -1,5 +1,7 @@
 # Katas
 
+![codecov](https://codecov.io/gh/NerOcrO/katas/branch/master/graph/badge.svg?token=2BSRFL9H4C)
+
 * Améliorer mes bases
 * JavaScript vanilla
 * Code lisible
