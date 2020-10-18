@@ -6,18 +6,13 @@ jobs:
   tests:
     name: Tests
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [12]
     steps:
-      - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@master
-        with:
-          node-version: ${{ matrix.node }}
       - name: Checkout this branch
         uses: actions/checkout@master
       - name: Install node modules
         run: npm install
+      - name: Run the linter
+        run: npm run lint
       - name: Run the tests
         run: npm run test
       - name: Run code coverage

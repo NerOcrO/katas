@@ -2,7 +2,7 @@
 
 // https://fr.wikipedia.org/wiki/Palindrome
 
-const isPalindrome = wording => !wording
+const isPalindrome = (wording) => !wording
   .split('')
   .reverse()
   .join('')

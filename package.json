@@ -22,8 +22,8 @@
     "@stryker-mutator/html-reporter": "^2.5.0",
     "@stryker-mutator/javascript-mutator": "^2.5.0",
     "@stryker-mutator/jest-runner": "^2.5.0",
-    "@types/jest": "^24.9.1",
-    "eslint": "^6.8.0",
+    "@types/jest": "^26.0.14",
+    "eslint": "^7.11.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
     "jest": "^26.5.3",
@@ -31,6 +31,7 @@
   },
   "scripts": {
     "test": "jest",
+    "lint": "eslint src",
     "stryker": "stryker run",
     "anagram": "node -r @babel/register src/anagram.js",
     "caesar_cipher": "node -r @babel/register src/caesar-cipher.js",

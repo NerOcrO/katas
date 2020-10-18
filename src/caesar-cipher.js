@@ -2,7 +2,7 @@
 
 // https://en.wikipedia.org/wiki/Caesar_cipher
 
-const substitution = offset => direction => (letter) => {
+const substitution = (offset) => (direction) => (letter) => {
   const alphabetLength = 26
   const Z = 90
   const z = 122
@@ -21,7 +21,7 @@ const substitution = offset => direction => (letter) => {
   return String.fromCharCode(index)
 }
 
-const caesarCipher = text => offset => direction =>
+const caesarCipher = (text) => (offset) => (direction) =>
   text.replace(/[a-zA-Z]/g, substitution(offset)(direction))
 
 export default caesarCipher
